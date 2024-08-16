@@ -1,3 +1,16 @@
+@import 'flowbite/dist/flowbite.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-width: 640px) {
+    .flowbite-navbar-menu {
+        bottom: 100%; /* Position the menu above the navbar */
+        top: auto; /* Disable the default top positioning */
+        transform: translateY(-100%); /* Move the menu upwards */
+        transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
+    .flowbite-navbar-menu.open {
+        transform: translateY(0); /* Show the menu */
+    }
+}
