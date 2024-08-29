@@ -1,2 +1,2 @@
-# findingfocusdev
-A Svelte Build for my findingfocus.dev website
+# findingfocusproductions
+A Svelte Build for my findingfocus.productions website
