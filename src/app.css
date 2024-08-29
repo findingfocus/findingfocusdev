@@ -3,14 +3,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 640px) {
-    .flowbite-navbar-menu {
-        bottom: 100%; /* Position the menu above the navbar */
-        top: auto; /* Disable the default top positioning */
-        transform: translateY(-100%); /* Move the menu upwards */
-        transition: transform 0.3s ease-in-out; /* Smooth transition */
-    }
-    .flowbite-navbar-menu.open {
-        transform: translateY(0); /* Show the menu */
-    }
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('/fonts/gothic.woff2') format('woff2'),
+    url('/fonts/gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+.font-century-gothic {
+    font-family: 'Century Gothic', sans-serif;
+}
+.squished-font {
+    display: inline-block; /* Ensure the transform property works */
+    transform: scaleY(0.97); /* Adjust the value to control the squish effect */
+    letter-spacing: 0.15em; /* Adjust the value to control the tracking */
+
+}
+
+/*@media (max-width: 640px) {*/
+/*    .flowbite-navbar-menu {*/
+/*        bottom: 100%; !* Position the menu above the navbar *!*/
+/*        top: auto; !* Disable the default top positioning *!*/
+/*        transform: translateY(-100%); !* Move the menu upwards *!*/
+/*        transition: transform 0.3s ease-in-out; !* Smooth transition *!*/
+/*    }*/
+/*    .flowbite-navbar-menu.open {*/
+/*        transform: translateY(0); !* Show the menu *!*/
+/*    }*/
+/*}*/
